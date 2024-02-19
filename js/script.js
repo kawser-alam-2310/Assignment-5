@@ -54,7 +54,7 @@ for (let i = 0; i < seatId.length; i++) {
 
 function couponCheck() {
     var coupon = document.getElementById("coupon").value;
-    if (totalPrice >0) {
+    if (totalPrice==2200) {
         if (coupon == "NEW15") {
             document.getElementById("grandTotal").innerHTML =
                 totalPrice - (parseInt(totalPrice) * 15) / 100;
@@ -72,11 +72,10 @@ function couponCheck() {
             document.getElementById("discount").innerText =
                 (parseInt(totalPrice) * 20) / 100;
         } else {
-           
             var coupon = document.getElementById("coupon").value;
         }
     } else {
-        alert("You need to select atleast one ticket before applying coupon!");
+        alert("You need to buy four tickets before applying coupon!");
     }
 }
 
